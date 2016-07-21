@@ -1,0 +1,14 @@
+<h4 class="title">Add New Image</h4>
+
+<form class="imageForm" ng-submit="addImage(image)">
+  <p class="control">
+    <input type="text" class="input" ng-model="image.name">
+  </p>
+  <p class="control">
+    <input type="text" class="input" ng-model="image.url">
+  </p>
+  <p class="control">
+    <textarea class="textarea" ng-model="image.description"></textarea>
+  </p>
+  <button class="button">Add Image</button>
+</form>

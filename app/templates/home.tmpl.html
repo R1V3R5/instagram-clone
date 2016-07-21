@@ -1,0 +1,7 @@
+<div class="columns is-multiline">
+  <div class="column is-one-quarter" ng-repeat="image in images">
+    <img ng-src="{{ image.url }}" alt="{{image.name}}" ng-click="viewImage(image._id)">
+    <button class="button" ng-click="deleteMe(image._id)">Delete</button>
+
+  </div>
+</div>
