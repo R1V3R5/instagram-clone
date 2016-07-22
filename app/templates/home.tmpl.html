@@ -1,7 +1,11 @@
 <div class="columns is-multiline">
-  <div class="column is-one-quarter" ng-repeat="image in images">
-    <img ng-src="{{ image.url }}" alt="{{image.name}}" ng-click="viewImage(image._id)">
-    <button class="button" ng-click="deleteMe(image._id)">Delete</button>
-
+  <div class="column is-one-quarter relative" ng-repeat="image in images">
+    <a href="/#/detail/{{ image._id }}">
+      <img ng-src="{{ image.url }}" alt="{{ image.name }}">
+    </a>
+      <!--<button class="button is-danger absolute" ng-click="deleteMe(image._id)">Delete</button>-->
+      <!--<button class="button like absolute" ng-click="likeMe(image)">Like</button>-->
+      <i class="fa fa-heart-o" aria-hidden="true" ng-click="likeMe(image)"></i>
+    
   </div>
 </div>

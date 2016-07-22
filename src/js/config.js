@@ -15,8 +15,12 @@ function config ($stateProvider, $urlRouterProvider) {
       templateUrl: 'templates/add.tmpl.html',
       controller: 'AddController'
     })
-    ;
-
+    .state('root.detail', {
+      url: '/detail/:id',
+      templateUrl: 'templates/detail.tmpl.html',
+      controller: 'DetailController'
+    });
+    
 
     $urlRouterProvider.otherwise('/');
 

@@ -8,6 +8,56 @@ nav {
   width: 90%;
 }
 
-.column img {
+.column {
+  position: relative;
+  img {
   height: 200px;
+  }
 }
+
+i {
+  position: absolute !important;
+  top: 15px;
+  right: 10px;
+  color: white;
+}
+
+.detailImage {
+  width: 50%;
+  flex-direction: column; 
+
+}
+
+.detailed {
+  display: flex;
+}
+.imageContent {
+ margin-left: 15px;
+}
+
+button{
+  // position: absolute !important;
+  // top: 20px;
+  // left: 10px;
+  &.like {
+    // display: none;
+    
+    left: 100px;
+    &:hover {
+      display: visible;
+    }
+  }
+}
+// .relative {
+//   position: relative;
+// }
+// button.delete {
+//   position: absolute;
+//   bottom: 47px;
+// }
+
+// button.like {
+//   position: absolute;
+//   bottom: 47px;
+//   right: 0;
+// }

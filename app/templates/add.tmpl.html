@@ -2,13 +2,13 @@
 
 <form class="imageForm" ng-submit="addImage(image)">
   <p class="control">
-    <input type="text" class="input" ng-model="image.name">
+    <input type="text" class="input" ng-model="image.name" placeholder="Name">
   </p>
   <p class="control">
-    <input type="text" class="input" ng-model="image.url">
+    <input type="text" class="input" ng-model="image.url" placeholder="Url">
   </p>
   <p class="control">
-    <textarea class="textarea" ng-model="image.description"></textarea>
+    <textarea class="textarea" ng-model="image.description" placeholder="Description"></textarea>
   </p>
   <button class="button">Add Image</button>
 </form>

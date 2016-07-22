@@ -4,6 +4,7 @@ import { config } from './config';
 import { serverConstant } from './server.constant';
 import { AddController } from './controllers/add.controller';
 import { HomeController } from './controllers/home.controller';
+import { DetailController } from './controllers/detail.controller';
 
 
 angular
@@ -12,4 +13,5 @@ angular
   .config(config)
   .controller('AddController', AddController)
   .controller('HomeController', HomeController)
+  .controller('DetailController', DetailController)
 ;
