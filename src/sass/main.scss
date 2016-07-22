@@ -20,6 +20,9 @@ i {
   top: 15px;
   right: 10px;
   color: white;
+  &:hover {
+    color: red;
+  }
 }
 
 .detailImage {

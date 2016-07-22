@@ -11,7 +11,6 @@ function HomeController ($scope, $http, SERVER, $state) {
   }
 
   $scope.deleteMe = (id) => {
-    console.log('Here')
     $http.delete(SERVER.URL + id).then( (res) => {
       $scope.images = $scope.images.filter( (image) => {
         return image._id !== id;
