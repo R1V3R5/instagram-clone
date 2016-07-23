@@ -1,0 +1,14 @@
+<h4 class="title">Edit {{ imageEdit.name }} Image</h4>
+
+<form class="imageForm" ng-submit="editImage(imageEdit)">
+  <p class="control">
+    <input type="text" class="input" ng-model="imageEdit.name" placeholder="Name">
+  </p>
+  <p class="control">
+    <input type="text" class="input" ng-model="imageEdit.url" placeholder="Url">
+  </p>
+  <p class="control">
+    <textarea class="textarea" ng-model="imageEdit.description" placeholder="Description"></textarea>
+  </p>
+  <button class="button">Save</button>
+</form>

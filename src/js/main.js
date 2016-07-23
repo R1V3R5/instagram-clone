@@ -5,6 +5,7 @@ import { serverConstant } from './server.constant';
 import { AddController } from './controllers/add.controller';
 import { HomeController } from './controllers/home.controller';
 import { DetailController } from './controllers/detail.controller';
+import { EditController } from './controllers/edit.controller';
 
 
 angular
@@ -14,4 +15,5 @@ angular
   .controller('AddController', AddController)
   .controller('HomeController', HomeController)
   .controller('DetailController', DetailController)
+  .controller('EditController', EditController)
 ;

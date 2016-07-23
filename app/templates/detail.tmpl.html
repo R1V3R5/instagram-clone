@@ -6,6 +6,9 @@
     <p> {{ imageDetail.name }} </p>
     <p> {{ imageDetail.description }} </p>
     <p> Has {{ imageDetail.likes }} likes </p>
+    <a href="/#/edit/{{imageDetail._id}}">
+      <button class="button">Edit</button>
+    </a>
     <button class="button" ng-click="deleteMe(imageDetail)">Delete</button>
   </div>
   

@@ -19,6 +19,11 @@ function config ($stateProvider, $urlRouterProvider) {
       url: '/detail/:id',
       templateUrl: 'templates/detail.tmpl.html',
       controller: 'DetailController'
+    })
+    .state('root.edit', {
+      url: '/edit/:id',
+      templateUrl: 'templates/edit.tmpl.html',
+      controller: 'EditController'
     });
     
 
