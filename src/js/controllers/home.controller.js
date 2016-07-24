@@ -1,18 +1,18 @@
-function HomeController ($scope, $http, SERVER, $state) {
+function HomeController($scope, $http, SERVER, $state) {
 
   $scope.images = [];
 
   init();
 
-  function init () {
-    $http.get(SERVER.URL).then( (res) => {
+  function init() {
+    $http.get(SERVER.URL).then((res) => {
       $scope.images = res.data;
     });
   }
 
   $scope.deleteMe = (id) => {
-    $http.delete(SERVER.URL + id).then( (res) => {
-      $scope.images = $scope.images.filter( (image) => {
+    $http.delete(SERVER.URL + id).then((res) => {
+      $scope.images = $scope.images.filter((image) => {
         return image._id !== id;
       });
     });
@@ -29,7 +29,7 @@ function HomeController ($scope, $http, SERVER, $state) {
       console.log(res)
     })
   }
-  
+
 
 }
 

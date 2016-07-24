@@ -1,4 +1,4 @@
-function EditController ($scope, $http, SERVER, $state, $stateParams) {
+function EditController($scope, $http, SERVER, $state, $stateParams) {
 
   $scope.imageEdit = {};
 
@@ -12,10 +12,11 @@ function EditController ($scope, $http, SERVER, $state, $stateParams) {
   }
 
   $scope.editImage = (image) => {
+    image.updatedAt = Date.now();
     $http.put(SERVER.URL + image._id, image).then((res) => {
       $state.go('root.home')
     });
-  }  
+  }
 
 }
 
